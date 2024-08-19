@@ -1,0 +1,109 @@
+.custom-select {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  height: 100%;
+  color: #17167e;
+}
+
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: #ffffff;
+  border: 1px solid var(--primary-color) !important;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.select-selected:hover {
+  background-color: rgb(23, 22, 126, 0.1);
+}
+
+.select-selected:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  width: 24px;
+  height: 75%;
+  background-image: url("../assets/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  pointer-events: none;
+  padding: 0 15px;
+  border-right: 1px solid var(--primary-color);
+}
+
+
+.select-selected:after {
+  /* appearance: none; */
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../assets/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.1rem top 50%;
+  background-size: 16px;
+  padding: 0 10px;
+  pointer-events: none;
+}
+
+.select-selected.select-arrow-active:after {
+  background-image: url("../assets/chevron-up.svg");
+}
+
+.select-items div,.select-selected {
+  position: relative;
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items {
+  position: absolute;
+  border: 1px solid var(--primary-color);
+  border-radius: 0 0 6px 6px;
+  text-align: center;
+  background-color: #ffffff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 49;
+}
+
+.select-items div:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  width: 24px;
+  height: 80%;
+  background-image: url("../assets/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  pointer-events: none;
+  padding: 0 15px;
+  border-right: 1px solid var(--primary-color);
+}
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

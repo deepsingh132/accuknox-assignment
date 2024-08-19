@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary-color: #17167e;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #f2f5fa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer utilities {
+  .iconHover{
+    @apply hover:cursor-pointer bg-[#f0f5fa] rounded-full
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "categoryTitle": "CSPM Executive Dashboard",
+      "widgets": [
+        {
+          "widgetName": "Cloud Accounts",
+          "widgetText": "AWS, Azure, GCP"
+        },
+        {
+          "widgetName": "Cloud Account Risk Assessment",
+          "widgetText": "High risk on AWS accounts"
+        }
+      ]
+    },
+    {
+      "categoryTitle": "CWPP Dashboard",
+      "widgets": [
+        {
+          "widgetName": "Top 5 Namespace Specific Alerts",
+          "widgetText": "Critical, High, Medium, Low"
+        },
+        {
+          "widgetName": "Workload Alerts",
+          "widgetText": "Critical, High, Medium, Low"
+        }
+      ]
+    },
+    {
+      "categoryTitle": "Registry Scan",
+      "widgets": [
+        {
+          "widgetName": "Image Risk Assessment",
+          "widgetText": "High, Medium, Low"
+        },
+        {
+          "widgetName": "Image Security Issues",
+          "widgetText": "Critical, High, Medium, Low"
+        }
+      ]
+    }
+  ]
+}
