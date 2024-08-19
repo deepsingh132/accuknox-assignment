@@ -1,4 +1,5 @@
-# 🛠 CNAPP Dashboard ![GitHub deployments](https://img.shields.io/github/deployments/deepsingh132/accuknox-assignment/production?label=build)
+# 🛠 CNAPP Dashboard 
+![GitHub deployments](https://img.shields.io/github/deployments/deepsingh132/accuknox-assignment/production?label=build)
 
 A customizable dashboard for managing widgets in different categories. Users can add, remove, and select widgets to personalize their experience. Built with React, Vite, TypeScript, and TailwindCSS.
 
